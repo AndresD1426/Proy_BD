@@ -14,11 +14,15 @@
             
         <div class="login">
         <div class="textl">Modificar</div>
-        <input type="text" placeholder="Modifica tu documento">
-        <input type="text" placeholder="Modifica tu primer nombre">
-        <input type="text" placeholder="Modifica tu segundo nombre">
-        <input type="text" placeholder="Modifica tu primer apellido">
-        <select id="Prog" style="margin-top: 10px; margin-bottom:10px; border: 1px solid black; border-radius: 6px;">
+
+        <form action="modificacion.php" method="POST">
+        <input type="text" name="Doc" placeholder="Ingresa tu documento">
+        <input type="text" name="PrimerN" placeholder="Modifica tu nombre">
+        <input type="text" name="SegundoN" placeholder="Modifica tu segundo nombre">
+        <input type="text" name="PrimerA" placeholder="Modifica tu primer apellido">
+        <input type="text" name="SegundoA" placeholder="Modifica tu segundo apellido">
+
+        <select id="Prog" name="Programa" style="margin-top: 10px; margin-bottom:10px; border: 1px solid black; border-radius: 6px;">
             <option value="">Modifica tu programa</option>
             <option value="IngS">Ingeniería de Alimentos</option>
             <option value="IngA">Ingeniería Ambiental</option>
@@ -26,34 +30,29 @@
             <option value="AdminSS">Administración de la Seguridad y Salud en el Trabajo</option>
             <option value="IngE">Ingeniería Eléctrica</option>
           </select>
-          <select id="Catego" style="margin-bottom:10px; border: 1px solid black; border-radius: 6px;">
+
+          <select id="Catego" name="Catego" style="margin-bottom:10px; border: 1px solid black; border-radius: 6px;">
             <option value="">Modifica tu categoria</option>
             <option value="Estudiante">Estudiante</option>
             <option value="Docente">Docente</option>
             <option value="DirectorP">Director de programa</option>
             <option value="Admin">Administrativo</option>
-          </select>
-        <input type="text" placeholder="Modifica tu correo">
-        <input type="text" placeholder="Modifica tu fecha de nacimiento">
-        <input type="text" placeholder="Modifica tu celular">
-        <input type="text" placeholder="Modifica tu género">
-        <input type="text" placeholder="Modifica tu contraseña">
-        <input type="text" placeholder="Modifica tu correo">
+        </select>
+        <input type="text" name="Correo" placeholder="Modifica tu correo">
+        <input type="text" name="Fecha" placeholder="Modifica tu fecha de nacimiento">
+        <input type="text" name="Celular" placeholder="Modifica tu celular">
+        <input type="text" name="Genero" placeholder="Modifica tu género">
+        <input type="text" name="Contra" placeholder="Modifica tu contraseña">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
         <button> Modificar</button>
+      </form>
         <a href="crear.html">Volver a registrarte</a>
                 </div>
             </div>    
             </div>
-    </div>
-
-    
-
-
-        
-
-    
+          
+    </div> 
 </body>
 </html>
