@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="crear.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Work+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+<div class="registro">
+    <form action="registro.php" method="POST">
+    <h1 class="titulo">Registrate</h1>
+    <div class="container-fluid texto-centrado">
+    <form action="#" autocomplete="off">
+    <div class="row">
+        <div class="col">
+            <h3>Documento de identidad</h3>
+                <input class="Document" name="Doc" type="number" placeholder="Ingresa documento">
+        </div>
+    <div class="col">
+        <h3>Primer nombre</h3>
+            <input class="PrimerN" Name="PrimerN" type="text" placeholder="Ingresa primer nombre">
+    </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Segundo nombre</h3>
+                <input class="SegundoN" name="SegundoN" type="text" placeholder="Ingresa segundo nombre">
+        </div>
+    
+    <div class="col">
+        <h3>Primer apellido</h3>
+            <input class="PrimerA" name="PrimerA" type="text" placeholder="Ingresa primer apellido">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3>Segundo apellido</h3>
+                <input class="SegundoA" name="SegundoA" type="text" placeholder="Ingresa segundo apellido">
+        </div>
+    <div class="col">
+        <h3 for="Prog">Selecciona tu programa </h3>
+            <select id="Prog" name="Programa" style="margin-bottom:15px; border: 1px solid black; border-radius: 6px;">
+              <option value="IngS">Ingeniería de Alimentos</option>
+              <option value="IngA">Ingeniería Ambiental</option>
+              <option value="IngS">Ingeniería de Software</option>
+              <option value="AdminSS">Administración de la Seguridad y Salud en el Trabajo</option>
+              <option value="IngE">Ingeniería Eléctrica</option>
+            </select>
+    </div>  
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3 for="Catego">Selecciona tu categoria </h3>
+            <select id="Catego" name="Catego" style="margin-bottom:10px; border: 1px solid black; border-radius: 6px;">
+              <option value="Estudiante">Estudiante</option>
+              <option value="Docente">Docente</option>
+              <option value="DirectorP">Director de programa</option>
+              <option value="Admin">Administrativo</option>
+            </select>
+        </div>
+    <div class="col">
+        <h3>Correo</h3>
+            <input class="Email" name="Correo" type="email" placeholder="Ingresa correo">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3>Fecha de nacimiento</h3>
+                <input class="Fecha" name="Fecha" type="date" placeholder="Ingresa fecha de nacimiento">
+        </div>
+    <div class="col">    
+        <h3>Celular</h3>
+            <input class="Celular" name="Celular" type="number" placeholder="Ingresa número de celular">
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3>Género</h3>
+                <input class="Genero" name="Genero" type="text" placeholder="Ingresa tu género">
+        </div>
+    <div class="col">   
+        <h3>Contraseña</h3>
+            <input class="Contraseña" name="Contra" type="password" placeholder="Ingresa tu contraseña">
+    </div>
+    </div>
+
+    <button class="btn-registro" style="margin: 12px auto; font-family: 'Fira Sans'; background-color: white; 
+    border: 1px solid black;; border-radius: 5px; display: block; width: 200px;" name="Regi">Registrarse</button>
+    <a href="index.html" style="margin: 12px auto; font-family: 'Fira Sans'; background-color: white; 
+    border: 1px solid black;; border-radius: 5px; display: block; width: 200px; text-decoration: none; color: black;"
+    name="Volver" >Login</a>
+
+    </form>
+</form>
+</div>
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
