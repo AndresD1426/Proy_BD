@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Work+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+
+        table.dataTable thead {
+            background-color:#4a63a3;
+            color:aliceblue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+        
+        <div class="fondo"></div>
+        <div class="container-fluid">
+        <div class="login">
+            <div class="textl">Admin panel</div>
+        
+        <div class="first">
+        <div class="1">
+            <button> Mostrar los registro de la tabla</button>
+        </div>
+
+        <div class="2">
+            <button> Mostrar los registros de Ingeniería de Alimentos </button>
+        </div>
+        <div class="3">
+            <button> Mostrar los registros de Ingeniería de Ambiental </button>
+        </div>
+
+        <div class="4">
+            <button> Mostrar los registros de Ingeniería de Software </button>
+        </div>
+
+        <div class="5">
+            <button> Mostrar los registros de Ingeniería de Eléctrica </button>
+        </div>
+
+        <div class="6">
+            <button> Mostrar los registros de Administración de la Seguridad y Salud en el Trabajo </button>
+        </div>
+
+        <div class="7">
+            <button> Mostrar los registros de estudiante</button>
+        </div>
+
+        <div class="8">
+            <button> Mostrar los registros de docente</button>
+        </div>
+
+        <div class="9">
+            <button> Mostrar los registros de director</button>
+        </div>
+
+        <div class="10">
+            <button> Mostrar los registros de administrativo</button>
+        </div>
+    </div>
+        </div>
+
+        <!--<div class="11">
+            <input type="number" placeholder="Registro por documento">
+            <button>Mostrar</button>
+        </div>
+          
+        </div>
+    </div>
+    <div class="mostrar">
+        <textarea readonly></textarea>
+    </div>-->
+
+   <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col">
+                <table id="tabla_usuarios" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Documento</th>
+                            <th>Primer Nombre</th>
+                            <th>Segundo Nombre</th>
+                            <th>Primer Apellido</th>
+                            <th>Segundo Apellido</th>
+                            <th>Programa</th>
+                            <th>Correo</th>
+                            <th>Fecha</th>
+                            <th>Celular</th>
+                            <th>Genero</th>
+                            <th>Contraseña</th>
+                            <th>Categoria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <button ></button>
+    </div>
+
+
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script> 
+
+    <script>
+        $(document).ready(function() {   
+            var url = 'http://localhost:3000/api/usuarios';
+   
+             $('#tabla_usuarios').DataTable({            
+                 "ajax":{
+                     "url": url,
+                     //"dataSrc":""
+                 },
+                /* "columns":[
+                     {"data":"Documento"},
+                     {"data":"PrimerN"},
+                     {"data":"SegundoN"},
+                     {"data":"PrimerA"},
+                     {"data":"SegundoA"},
+                     {"data":"Programa"},
+                     {"data":"Correo"},
+                     {"data":"Fecha"},
+                     {"data":"Celular"},
+                     {"data":"Genero"},
+                     {"data":"Contra"},
+                     {"data":"Categoria"},
+                 ]*/
+             });
+       });
+
+    </script>
+
+</body>
+</html>
