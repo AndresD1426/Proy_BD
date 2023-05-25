@@ -24,9 +24,6 @@ function insertar($conexion){
      '$Contra','$Catego')";
 
     mysqli_query($conexion, $consulta) or die(mysqli_error($conexion));
-
-
-
     $filas = mysqli_affected_rows($conexion);
 
 if ($filas > 0) {

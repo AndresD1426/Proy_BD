@@ -16,7 +16,7 @@
         <div class="textl">Modificar</div>
 
         <form action="modificacion.php" method="POST">
-        <input type="text" name="Doc" placeholder="Ingresa tu documento">
+        <input type="text" name="Doc" placeholder="Ingresa tu documento (Este apartado no se puede modificar)">
         <input type="text" name="PrimerN" placeholder="Modifica tu nombre">
         <input type="text" name="SegundoN" placeholder="Modifica tu segundo nombre">
         <input type="text" name="PrimerA" placeholder="Modifica tu primer apellido">
@@ -24,9 +24,9 @@
 
         <select id="Prog" name="Programa" style="margin-top: 10px; margin-bottom:10px; border: 1px solid black; border-radius: 6px;">
             <option value="">Modifica tu programa</option>
-            <option value="IngS">Ingeniería de Alimentos</option>
-            <option value="IngA">Ingeniería Ambiental</option>
-            <option value="IngS">Ingeniería de Software</option>
+            <option value="IngAli">Ingeniería de Alimentos</option>
+            <option value="IngAmb">Ingeniería Ambiental</option>
+            <option value="IngSoft">Ingeniería de Software</option>
             <option value="AdminSS">Administración de la Seguridad y Salud en el Trabajo</option>
             <option value="IngE">Ingeniería Eléctrica</option>
           </select>
@@ -36,10 +36,9 @@
             <option value="Estudiante">Estudiante</option>
             <option value="Docente">Docente</option>
             <option value="DirectorP">Director de programa</option>
-            <option value="Admin">Administrativo</option>
         </select>
         <input type="text" name="Correo" placeholder="Modifica tu correo">
-        <input type="text" name="Fecha" placeholder="Modifica tu fecha de nacimiento">
+        <input type="date" name="Fecha" placeholder="Modifica tu fecha de nacimiento">
         <input type="text" name="Celular" placeholder="Modifica tu celular">
         <input type="text" name="Genero" placeholder="Modifica tu género">
         <input type="text" name="Contra" placeholder="Modifica tu contraseña">
